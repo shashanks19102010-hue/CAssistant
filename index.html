@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Builder Pro - Ultimate Extreme Edition</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r151/three.min.js"></script>
+</head>
+<body>
+    <!-- 3D Animation Background -->
+    <div id="background-canvas"></div>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+    <!-- Main Content -->
+    <header>
+        <h1>AI Builder Pro Ultimate</h1>
+        <p>Extreme AI-Powered Dev Tool – Your Data, Local Magic</p>
+    </header>
+
+    <main>
+        <!-- Chat Section -->
+        <section id="chat-section">
+            <h2>AI Chat (Auto-Complete Coming)</h2>
+            <textarea id="chat-prompt" placeholder="Enter your prompt..."></textarea>
+            <button onclick="handleChat()">Send</button>
+            <div id="chat-response"></div>
+        </section>
+
+        <!-- Save Memory Section -->
+        <section id="save-memory-section">
+            <h2>Save Memory</h2>
+            <input type="text" id="memory-title" placeholder="Title">
+            <textarea id="memory-content" placeholder="Content"></textarea>
+            <button onclick="handleSaveMemory()">Save</button>
+            <div id="save-memory-response"></div>
+        </section>
+
+        <!-- Get Memory Section -->
+        <section id="get-memory-section">
+            <h2>View Memories</h2>
+            <button onclick="handleGetMemory()">Load Memories</button>
+            <div id="memory-list"></div>
+        </section>
+
+        <!-- Create Project Section -->
+        <section id="create-project-section">
+            <h2>Create Project</h2>
+            <input type="text" id="project-name" placeholder="Project Name">
+            <button onclick="handleCreateProject()">Create</button>
+            <div id="create-project-response"></div>
+        </section>
+
+        <!-- Code Review Section -->
+        <section id="code-review-section">
+            <h2>Code Review Pro</h2>
+            <textarea id="code-input" placeholder="Paste your code here..."></textarea>
+            <button onclick="handleCodeReview()">Review</button>
+            <div id="code-review-response"></div>
+        </section>
+
+        <!-- Generate SEO Section -->
+        <section id="seo-section">
+            <h2>SEO Generator Elite</h2>
+            <textarea id="seo-description" placeholder="Content Description..."></textarea>
+            <button onclick="handleGenerateSEO()">Generate</button>
+            <div id="seo-response"></div>
+        </section>
+
+        <!-- Git Init Section -->
+        <section id="git-init-section">
+            <h2>Git Init Master</h2>
+            <input type="text" id="git-path" placeholder="Project Path">
+            <button onclick="handleGitInit()">Init</button>
+            <div id="git-init-response"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AI Builder Pro. Local, Secure, Extreme.</p>
+    </footer>
+
+    <!-- Hidden Session Token -->
+    <input type="hidden" id="session-token" value="{{ session_token }}">
+
+    <script src="/static/script.js"></script>
+</body>
+  </html>
