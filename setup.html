@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup - AI Builder Pro Ultimate</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div id="background-canvas"></div>
+    <div class="setup-container">
+        <h1>Welcome to AI Builder Pro Ultimate</h1>
+        <p>Enter your OpenAI API key to get started (runs fully local with your data).</p>
+        <form method="POST" action="/setup">
+            <input type="password" name="openai_key" placeholder="Your OpenAI API Key" required>
+            <button type="submit">Setup & Launch</button>
+        </form>
+        <p class="hint">Get your key from <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI Dashboard</a></p>
+    </div>
+    <script src="/static/script.js"></script>
+    <script>init3DBackground();</script>
+</body>
+</html>
